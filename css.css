@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root{
+    --primary-color: #368685;
+    --secondary-color: #017479;
+    --text-dark: #0f172a;
+    --text-light: #94a3b8;
+    --white: #60c3eb;
+    --max-width: 1400px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background: linear-gradient(
+        to right,
+        rgba(119, 164, 206, 0.9),rgba(48, 119, 177, 0)),
+    url("bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+
+  .container {
+    max-width: var(--max-width);
+    min-height: 100vh;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  nav {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 0.98%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    color: white;
+    font-size: large;
+  }
+  
+  .nav__links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    color: white;
+  }
+  
+  .link a {
+    text-decoration: none;
+    font-weight: 900;
+    color: var(--white);
+  }
+
+  .login {
+    padding: 0.25rem 0.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-weight: 850;
+    color: var(--white);
+    background: #155999;
+    border-radius: 4rem;
+    transition: 0.1s;
+  }
+  
+  .login span {
+    padding: 3px 6px;
+    font-size: 1.1rem;
+    color: #01011a;
+    background-color: var(--white);
+    cursor: pointer;
+    border-radius: 100%;
+  }
+
+  .login button{
+    position: relative;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 4rem;
+    background-color: #81cbdd;
+  }
+
+  .h-text{
+    position: relative;
+    padding: 1rem 0.1rem;
+    height: 80px;
+    text-align: center;
+    outline: black;
+    background-color: transparent;
+    border-radius: 6rem;
+    margin-bottom: 2rem;
+  }
+
+  .h-text span{
+    font-size: 25px;
+  }
+
+  .h-text input{
+    width: 35%;
+    padding: 9px;
+    font-size: 20px;
+    border-radius: 20px;
+  }
+
+  .h-text button{
+    padding: 13px;
+    width: 9.5%;
+    border-radius: 25px;
+    background-color: #125780;
+    font-size: 18px;
+    cursor: pointer;
+    color: whitesmoke;
+  }
+
+  .content h1{
+    position: relative;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    left: 1.2rem;
+    font-weight: 700;
+  }
+
+  .content h1 span{
+    -webkit-text-stroke: 2px;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .content p{
+    position: relative;
+    left: 1.2rem;
+    max-width: 400px;
+    margin-bottom: 1rem;
+    line-height: 1.7rem;
+    font-size: larger;
+    font-weight: 450;
+  }
+
+  .content button{
+    position: relative;
+    left: 1.2rem;
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #81cbdd;
+  }
+
+  .socials{
+    position: relative;
+    left: 1.2rem;
+    top: 3.9rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .socials span{
+    font-size: 1.5rem;
+  }
+
+  .destination__grid {
+    position: relative;
+    left: 27.5rem;
+    bottom: 24rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  
+  .destination__card {
+    height: 100%;
+    background-color: rgb(137, 211, 230);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.7);
+  }
+  
+  .destination__card img {
+    width: 100%;
+  }
+  
+  .card__content {
+    padding: 1rem;
+  }
+  
+  .card__content h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  
+  .card__content p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+  
+  .card__content .btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #97d0df;
+  }
